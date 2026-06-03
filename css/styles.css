@@ -1,0 +1,385 @@
+/* ==========================================================================
+   CONFIGURAÇÕES GLOBAIS E VARIÁVEIS
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========================================================================
+    FONTES LOCAIS
+   ========================================================================== */
+
+/* --- ARCHIVO BLACK --- */
+@font-face {
+    font-family: 'Archivo Black';
+    src: url('../fonts/ArchivoBlack-Regular.ttf') format('truetype');
+}
+
+/* --- INTER --- */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
+/* --- PLAYFAIR DISPLAY  --- */
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
+
+:root {
+    --rosa-fundo:    #ffcade;
+    --vinho-escuro:  #491630;
+    --roxo:          #74306b;
+    --rosa-claro:    #e9b9c7;
+    --branco:        #fff8f8;
+    --texto-claro:   #f5eaea;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--vinho-escuro);
+    background-color: var(--branco);
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   TIPOGRAFIA
+   ========================================================================== */
+.secao-label {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 2.1rem;
+    color: var(--roxo);
+    margin-bottom: 8px;
+}
+
+.secao-label.claro {
+    color: var(--rosa-claro);
+}
+
+.secao-titulo {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 3.5rem;
+    color: var(--vinho-escuro);
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.secao-titulo.claro {
+    color: var(--branco);
+}
+
+/* ==========================================================================
+   HOME PAGE
+   ========================================================================== */
+.home-page {
+    position: relative;
+    background-color: var(--rosa-fundo);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: -9px;
+}
+
+.name {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 6rem;
+    color: var(--roxo);
+    line-height: 0.9;
+    letter-spacing: -2px;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+/* ==========================================================================
+   SOBRE PAGE
+   ========================================================================== */
+.sobre-page {
+    background-color: var(--branco);
+    min-height: 100vh;
+    padding: 80px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-container {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.sobre-texto {
+    flex: 1.2;
+}
+
+.sobre-descricao {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.sobre-cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card {
+    background-color: var(--rosa-fundo);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.card-numero {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2rem;
+    color: var(--roxo);
+    opacity: 0.4;
+}
+
+.card-titulo {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.card-texto {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* ==========================================================================
+   HABILIDADES PAGE
+   ========================================================================== */
+.habilidades-page {
+    background-color: var(--roxo);
+    min-height: 100vh;
+    padding: 80px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.habilidades-container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.habilidades-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.habilidade-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.habilidade-nome {
+    font-family: 'Archivo Black', sans-serif;
+    color: var(--branco);
+    width: 130px;
+    flex-shrink: 0;
+}
+
+.barra-fundo {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 100px;
+    height: 10px;
+}
+
+.barra-progresso {
+    background-color: var(--rosa-claro);
+    height: 100%;
+    border-radius: 100px;
+}
+
+.habilidade-porcentagem {
+    color: var(--rosa-claro);
+    font-size: 0.85rem;
+    width: 36px;
+    text-align: right;
+}
+
+/* ==========================================================================
+   PROJETOS PAGE (LISTA E CARDS)
+   ========================================================================== */
+.projetos-page {
+    background-color: var(--branco);
+    min-height: 100vh;
+    padding: 80px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos-container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.projeto-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 32px 0;
+    border-bottom: 1px solid rgba(54, 8, 31, 0.2);
+}
+
+.projeto-numero {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 3rem;
+    color: var(--roxo);
+    width: 70px;
+    opacity: 0.4;
+}
+
+.projeto-titulo {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    transition: color 0.3s;
+}
+
+.projeto-descricao {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.projeto-tags {
+    display: flex;
+    gap: 8px;
+}
+
+.tag {
+    background-color: var(--roxo);
+    color: var(--branco);
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    border-radius: 100px;
+}
+
+/* ==========================================================================
+   CONTATO PAGE
+   ========================================================================== */
+.contato-page {
+    background-color: var(--rosa-claro);
+    min-height: 60vh;
+    padding: 80px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contato-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    gap: 60px;
+}
+
+.contato-descricao {
+    color: var(--vinho-escuro);
+    font-size: 1rem;
+}
+
+.contato-links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato-link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--vinho-escuro);
+    text-decoration: none;
+    padding: 16px;
+    border: 1px solid var(--vinho-escuro);
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.contato-link a {
+    color: inherit;
+    text-decoration: none;
+    flex: 1;
+}
+
+.contato-link:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--branco);
+}
+
+.contato-icon {
+    color: var(--roxo);
+    width: 30px;
+    text-align: center;
+}
+
+/* ==========================================================================
+   RODAPÉ
+   ========================================================================== */
+.rodape {
+    text-align: center;
+    color: var(--vinho-escuro);
+    font-size: 1rem;
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rosa-fundo);
+}
