@@ -385,84 +385,23 @@ body {
 }
 
 /* ==========================================================================
-   MEDIA QUERIES (RESPONSIVIDADE PARA CELULARES)
+   MEDIA QUERIES (RESPONSIVIDADEgir PARA CELULARES)
    ========================================================================== */
 @media (max-width: 768px) {
-
-    /* --- Tipografia Geral --- */
-    .secao-titulo {
-        font-size: 2.2rem;
-        margin-bottom: 20px;
-    }
-
-    .secao-label {
-        font-size: 1.6rem;
-    }
-
-    /* --- Home Page --- */
-    .name {
-        font-size: 3.5rem;
-    }
-
-    .title {
-        font-size: 2.2rem;
-    }
-
-    /* --- Sobre Page --- */
-    .sobre-page {
-        padding: 40px 20px;
-    }
-
-    .sobre-container {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    /* --- Habilidades Page --- */
-    .habilidades-page {
-        padding: 40px 20px;
-    }
-
-    .habilidade-item {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-    }
-
-    .habilidade-nome {
-        width: 100%;
-    }
-
-    .barra-fundo {
-        width: 100%;
-    }
-
-    /* --- Projetos Page --- */
-    .projetos-page {
-        padding: 40px 20px;
-    }
-
-    .projeto-card {
-        flex-direction: column;
-        gap: 10px;
-        padding: 20px 0;
-    }
-
-    .projeto-numero {
-        font-size: 2rem;
-    }
-
-    .projeto-tags {
-        flex-wrap: wrap;
-    }
-
-    /* --- Contato Page --- */
-    .contato-page {
-        padding: 40px 20px 20px;
-    }
-
-    .contato-container {
-        flex-direction: column;
-        gap: 30px;
-    }
+    .secao-titulo { font-size: 2.2rem; margin-bottom: 20px; }
+    .secao-label { font-size: 1.6rem; }
+    .name { font-size: 3.5rem; }
+    .title { font-size: 2.2rem; }
+    .sobre-page { padding: 40px 20px; }
+    .sobre-container { flex-direction: column; gap: 30px; }
+    .habilidades-page { padding: 40px 20px; }
+    .habilidade-item { flex-direction: column; align-items: flex-start; gap: 8px; }
+    .habilidade-nome { width: 100%; }
+    .barra-fundo { width: 100%; }
+    .projetos-page { padding: 40px 20px; }
+    .projeto-card { flex-direction: column; gap: 10px; padding: 20px 0; }
+    .projeto-numero { font-size: 2rem; }
+    .projeto-tags { flex-wrap: wrap; }
+    .contato-page { padding: 40px 20px 20px; }
+    .contato-container { flex-direction: column; gap: 30px; }
 }
