@@ -37,6 +37,7 @@
     --rosa-claro:    #e9b9c7;
     --branco:        #fff8f8;
     --texto-claro:   #f5eaea;
+    --cinza:         #555555;
 }
 
 body {
@@ -160,7 +161,7 @@ body {
 .sobre-descricao {
     font-size: 1rem;
     line-height: 1.8;
-    color: #555;
+    color: var(--cinza);
     margin-bottom: 16px;
 }
 
@@ -192,7 +193,7 @@ body {
 
 .card-texto {
     font-size: 0.9rem;
-    color: #666;
+    color: var(--cinza);
 }
 
 /* ==========================================================================
@@ -233,7 +234,7 @@ body {
 
 .barra-fundo {
     flex: 1;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--cinza);
     border-radius: 100px;
     height: 10px;
 }
@@ -273,7 +274,7 @@ body {
     align-items: flex-start;
     gap: 30px;
     padding: 32px 0;
-    border-bottom: 1px solid rgba(54, 8, 31, 0.2);
+    border-bottom: 1px solid var(--texto-claro);
 }
 
 .projeto-numero {
@@ -293,7 +294,7 @@ body {
 
 .projeto-descricao {
     font-size: 0.95rem;
-    color: #555;
+    color: var(--cinza);
     line-height: 1.7;
     margin-bottom: 12px;
 }
@@ -309,6 +310,19 @@ body {
     font-size: 0.75rem;
     padding: 4px 12px;
     border-radius: 100px;
+}
+
+.img-projetos {
+    width: 100%;
+    display: block;
+    margin-top: 35px;
+    position: relative;
+    padding-top: 24px; 
+    background-color: #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+
 }
 
 /* ==========================================================================
@@ -362,7 +376,7 @@ body {
 }
 
 .contato-link:hover {
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: var(--cinza);
     color: var(--branco);
 }
 
@@ -385,7 +399,7 @@ body {
 }
 
 /* ==========================================================================
-   MEDIA QUERIES (RESPONSIVIDADEgir PARA CELULARES)
+   MEDIA QUERIES (RESPONSIVIDADE)
    ========================================================================== */
 @media (max-width: 768px) {
     .secao-titulo { font-size: 2.2rem; margin-bottom: 20px; }
